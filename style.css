@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  border: 1px solid black;
+}
+
+header {
+  background-color: red;
+}
+
+header h1 {
+  margin: 0;
+}
+
+article {
+  background-color: white;
+  padding: 10px;
+}
+
+header h1,
+article form,
+footer {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+fieldset label {
+  text-align: right;
+}
+
+fieldset input {
+  width: 25%;
+  min-width: 150px;
+}
+
+footer {
+  padding: 10px;
+  background-color: green;
+}
+
+@media screen and (max-width: 400px) {
+  fieldset {
+    width: fit-content;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+
+  fieldset label {
+    text-align: left;
+  }
+}
